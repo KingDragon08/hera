@@ -11,6 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/verify', 'HeraController@verify');
+Route::get('/generate', 'HeraController@generate');
+Route::any('/hera.php', 'HeraController@hera');
